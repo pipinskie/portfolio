@@ -1,0 +1,148 @@
+/* This is the start of my background */
+body, html { 
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+
+.video-background {
+    background-repeat: no-repeat;
+    position: absolute;
+    background-attachment: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    
+}
+
+#background-video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+/* This is the end of my background */
+
+/* This is the start of my nav bar */
+
+.navbar {
+    background-color: transparent; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 15px 40px; 
+}
+
+
+.navbar h1 {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    font-family: 'Helvetica', sans-serif;
+}
+
+
+.nav-list {
+    list-style-type: none; 
+    display: flex; 
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav-list li {
+    margin-left: 30px; 
+}
+
+
+.nav-list a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+
+.nav-list a:hover {
+    background-color: rgb(46, 35, 35); 
+    color: #ffffff; 
+}
+/* This is the end of my nav bar */
+
+
+/* This is the start of my media query */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .nav-list {
+        flex-direction: column; 
+        margin-top: 15px;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+}
+/* This is the end of my media query */
+
+h1 {
+    font-size: 60px;
+    color: #ffffff;
+    text-align: left;
+    margin-top: 120px;
+    margin-left: 60px;
+    margin-right: 500px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+h3 {
+    font-size: 25px;
+    color: #ffffff;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 60px;
+    margin-right: 600px;
+    font-family: 'Helvetica', sans-serif;
+}
+/* This is the start of my image */
+img {
+    position: relative;
+    margin-left:980px;
+    margin-right:50px;
+    display: block;
+    top: -345px;
+    
+}
+/* This is the end of my image */
+
+/* This is the start of my box */
+.box {
+    margin-top: 100px;
+    margin-left: 175px;
+    margin-right: 130px;
+    width: 1500px;
+    height: 600px;
+    border: 5px solid rgb(95, 95, 95);
+    padding: 20px;
+    text-align: center;
+}
+/* This is the end of my box */
+
+.highlight {
+    color: #087416; /* Change to any color you like */
+    font-weight: bold; /* Optional: Makes it bold */
+}
+
+.string {
+    color: #002fff; /* Example color for 'Hello, World' */
+    font-style: italic; /* Optional: Makes it look different */
+}
