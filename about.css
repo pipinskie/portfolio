@@ -1,6 +1,6 @@
 /* This is the start of my background */
 body, html { 
-    background-color: #F8F3D9;
+    background-color: #e6d29e;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -11,7 +11,7 @@ body, html {
 /* This is the start of my nav bar */
 
 .navbar {
-    background-color: #443627; 
+    background-color:rgb(105, 51, 51); 
     display: flex;
     justify-content: space-between; 
     align-items: center;
@@ -79,17 +79,17 @@ p{
     font-size: 30px;
     color: #443627;
     margin-top: 100px;
-    margin-left: 50px;
-    margin-right: 950px;
+    margin-left: 80px;
+    margin-right: 1000px;
 }
 
 
 p:nth-of-type(2){
     font-size: 30px;
     color: #443627;
-    margin-top: 300px;
-    margin-left: 1050px;
-    margin-right: 50px;
+    margin-top: 130px;
+    margin-left: 1000px;
+    margin-right: 80px;
 }
 
 h1 {
