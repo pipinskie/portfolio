@@ -82,6 +82,7 @@ body, html {
         justify-content: space-between;
         position: relative;
         align-items: center; 
+        width: 100%;
         padding: 15px;
     }
 
@@ -206,11 +207,12 @@ img {
 /* This is the end of my box */
 
 .highlight {
-    color: #087416; /* Change to any color you like */
-    font-weight: bold; /* Optional: Makes it bold */
+    color: #087416; 
+    font-weight: bold; 
 }
 
 .string {
-    color: #002fff; /* Example color for 'Hello, World' */
-    font-style: italic; /* Optional: Makes it look different */
+    color: #002fff;
+    font-style: italic; 
 }
+
