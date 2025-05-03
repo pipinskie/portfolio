@@ -4,36 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prince Jin Stephen Moya</title>
-    <link rel="stylesheet" href="css\about.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css\home.css">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Anime.js for animations -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script> 
 </head>
 <body>
-    <nav class="navbar">
-        <h1>Suprimocy</h1>
-        <ul class="nav-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="tech-stack.html">Techstack</a></li>
-        </ul>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Suprimocy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tech-stack.html">Techstack</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <p id="text" style="opacity:0; transform:translateX(-100px); font-size:33px;">
-    Hello! My name is Prince known as Pin. Spicy foods, Playing games, and listening to music is important in my life. I am not the best, but I always do my best and that is whats important to me. I always like to experience new things and discover something even though I am not good at it. But at the end of the day, Life is good.</p>
+    <!-- About Content -->
+    
+    <div class="container main-container">
+        <div class="about-content">
+            <div class="header text-center mb-5">
+                <h1>About Me</h1>
+            </div>
+            <p class="about-text" style="opacity:0; transform:translateX(-100px);">
+                Hello! My name is Prince known as Pin. Spicy foods, Playing games, and listening to music is important in my life. I am not the best, but I always do my best and that is whats important to me. I always like to experience new things and discover something even though I am not good at it. But at the end of the day, Life is good.
+            </p>
 
-    <p id="text" style="opacity:0; transform:translateX(-100px); font-size:33px;">
-    As an IT Student, my plan is to be a web developer because this is what I see that I like for now. I aspire to express my inner creativity by developing innovative and visually captivation websites that reflect my artistic vision. I also find great joy and fulfillment in expressing my creativity through web development, as it allows me to merge my artistic vision with the process of crafting something both functional and beautiful.</p>
+            <p class="about-text" style="opacity:0; transform:translateX(-100px);">
+                As an IT Student, my plan is to be a web developer because this is what I see that I like for now. I aspire to express my inner creativity by developing innovative and visually captivation websites that reflect my artistic vision. I also find great joy and fulfillment in expressing my creativity through web development, as it allows me to merge my artistic vision with the process of crafting something both functional and beautiful.
+            </p>
+        </div>
+    </div>
 
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Animation Script -->
     <script>
-        anime({
-          targets: '#text',
-          translateX: 0,
-          opacity: 1,
-          duration: 3600,
-          easing: 'easeOutExpo'
+        document.addEventListener('DOMContentLoaded', function() {
+            anime({
+                targets: '.about-text',
+                translateX: 0,
+                opacity: 1,
+                duration: 1000,
+                easing: 'easeOutExpo',
+                delay: anime.stagger(200)
+            });
         });
-      </script>
-
-
-</body>
+    </script>
+</body> 
 </html>

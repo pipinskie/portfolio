@@ -1,118 +1,324 @@
-/* This is the start of my background */
-body, html { 
-    background-color:#a9dce3;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+/* Global Styles */
+:root {
+    --primary-color: #7689de;
+    --secondary-color: #a9dce3;
+    --text-color: #333;
+    --accent-color: #ff6b6b;
+    --border-color: #7689de;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
 }
-/* This is the end of my background */
 
-/* This is the start of my nav bar */
+/* 
+* Main body styling
+* Sets the font, colors and prevents horizontal overflow
+*/
+body {
+    font-family: 'Baskervville', serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    overflow-x: hidden;
+}
+
+/* 
+* Bootstrap Navbar Overrides
+* Customizes the Bootstrap navbar to match our color scheme
+*/
 .navbar {
-    background-color: #7689de; 
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    padding: 15px 40px; 
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.navbar h1 {
-    font-size: 24px;
-    color: #a9dce3;
-    margin: 0;
-    font-family: "Baskervville", serif;
-  font-weight: 400;
-  font-style: italic;
+.navbar-brand {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    font-family: 'Baskervville', serif;
+    font-style: italic;
 }
 
-.nav-list {
-    list-style-type: none; 
-    display: flex; 
-    margin: 0;
-    padding: 0;
+.navbar-toggler {
+    border-color: var(--secondary-color);
 }
 
-.nav-list li {
-    margin-left: 30px; 
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(169, 220, 227, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-.nav-list a {
-    text-decoration: none;
-    color: #a9dce3;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 8px 16px;
+.nav-link {
+    color: var(--secondary-color);
+    font-family: 'Baskervville', serif;
+    font-style: italic;
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 5px;
-    transition: all 0.3s ease;
-    font-family: "Baskervville", serif;
-  font-weight: 400;
-  font-style: italic;
+    transition: var(--transition);
 }
 
-.nav-list a:hover {
-    background-color: #a9dce3; 
-    color: #7689de; 
+.nav-link:hover, .nav-link.active {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
-/* This is the end of my nav bar */
 
-    
-/* This is the end of my media query */
+/* 
+* Main Content Container
+* Provides proper spacing from the fixed navbar
+*/
+.main-container {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+    max-width: 1140px;
+    margin: 0 auto;
+}
 
+/* 
+* Content Wrapper
+* Styles the main content area with border and shadow
+*/
+.content-wrapper {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 3px solid var(--border-color);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+}
+
+/* 
+* Text Content
+* Styles for the main text area
+*/
+.text-content {
+    padding: 1rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* 
+* Image Container
+* Styles the container holding the profile image
+*/
+.image-container {
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 
+* Profile Image
+* Styles the profile image itself with circular shape and hover zoom
+*/
+.profile-image {
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    border: 3px solid var(--border-color);
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* 
+* Typography
+* Styles for headings and text
+*/
 h1 {
-    font-size: 60px;
-    color: #7689de;
-    text-align: left;
-    margin-top: 120px;
-    margin-left: 60px;
-    margin-right: 500px;
-    font-family: "Baskervville", serif;
-  font-weight: 400;
-  font-style: italic;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-family: 'Baskervville', serif;
+    font-style: italic;
+    text-align: center;
 }
 
 h3 {
-    font-size: 25px;
-    color:#7689de;
-    text-align: left;
-    margin-top: 10px;
-    margin-left: 60px;
-    margin-right: 600px;
-    font-family: "Baskervville", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-/* This is the start of my image */
-img {
-    position: relative;
-    margin-left: 980px;
-    margin-right: 50px;
-    display: block;
-    top: -345px;
-}
-/* This is the end of my image */
-
-/* This is the start of my box */
-.box {
-    margin-top: 100px;
-    margin-left: 175px;
-    margin-right: 130px;
-    width: 1500px;
-    height: 600px;
-    border: 5px solid#7689de;
-    padding: 20px;
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-family: 'Baskervville', serif;
+    font-style: italic;
     text-align: center;
 }
-/* This is the end of my box */
 
+/* 
+* Text Highlighting
+* Styles for highlighted text elements
+*/
 .highlight {
-    color: #087416; 
-    font-weight: bold; 
+    color: #087416;
+    font-weight: bold;
 }
 
 .string {
     color: #002fff;
-    font-style: italic; 
+    font-style: italic;
 }
 
+/* 
+* About Page Styles
+* Styles specific to the about page
+*/
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 3px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.about-text {
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+
+/* 
+* Animations
+* Fade-in animation for content elements
+*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content-wrapper {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* 
+* Responsive Design - Large Devices
+* Adjustments for screens up to 992px (large tablets/small desktops)
+*/
+@media (max-width: 992px) {
+    .content-wrapper {
+        padding: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    h3 {
+        font-size: 1.1rem;
+    }
+    
+    /* Reorder columns on tablet - image first, then text */
+    .row.content-wrapper {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    .image-container {
+        margin-bottom: 2rem;
+    }
+    
+    .profile-image {
+        max-width: 250px;
+        height: 250px;
+    }
+}
+
+/* 
+* Responsive Design - Medium Devices
+* Adjustments for screens up to 768px (tablets/large phones)
+*/
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.75rem 1rem;
+    }
+    
+    .main-container {
+        padding-top: 5rem;
+    }
+    
+    .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+    
+    /* Reorder columns on mobile - image first, then text */
+    .row.content-wrapper {
+        flex-direction: column-reverse;
+    }
+    
+    .image-container {
+        margin-bottom: 2rem;
+    }
+    
+    .profile-image {
+        max-width: 220px;
+        height: 220px;
+    }
+    
+    .about-content {
+        margin-top: 6rem;
+        padding: 1.5rem;
+        text-align: center;
+    }
+}
+
+/* 
+* Responsive Design - Small Devices
+* Adjustments for screens up to 576px (mobile phones)
+*/
+@media (max-width: 576px) {
+    .main-container {
+        padding-top: 4.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .content-wrapper {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h3 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .profile-image {
+        max-width: 180px;
+        height: 180px;
+    }
+    
+    .about-content {
+        padding: 1rem;
+        margin-top: 5rem;
+    }
+    
+    .about-text {
+        font-size: 0.95rem;
+        text-align: center;
+    }
+}
