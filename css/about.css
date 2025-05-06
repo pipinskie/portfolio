@@ -1,14 +1,12 @@
-/* This is the start of my background */
+
 body, html { 
     background-color: #a9dce3;
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
 }
-/* This is the end of my background */
-
-/* This is the start of my nav bar */
 
 .navbar {
     background-color: #7689de; 
@@ -64,7 +62,6 @@ body, html {
     background-color: #a9dce3; 
     color: #7689de; 
 }
-/* This is the end of my nav bar */
 
 p{
     font-size: 80px;
@@ -87,4 +84,4 @@ p:nth-of-type(2){
     font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: italic;
-}
+} 

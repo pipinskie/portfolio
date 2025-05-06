@@ -1,4 +1,3 @@
-/* This is the start of my background */
 body, html { 
     background-color: #a9dce3;
     margin: 0;
@@ -6,16 +5,12 @@ body, html {
     height: 100%;
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
-/* This is the end of my background */
-
-/* This is the start of my nav bar */
 
 .navbar {
     background-color:  #7689de; 
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    padding: 15px 40px; 
 }
 
 
@@ -63,11 +58,6 @@ body, html {
 }
 /* This is the end of my nav bar */
 
-
-/* 
-* Tech Stack Page Styles 
-* Main container for the tech stack content
-*/
 .tech-stack-container {
     background-color: rgba(255, 255, 255, 0.1);
     border: 3px solid var(--border-color);
@@ -77,10 +67,6 @@ body, html {
     margin-bottom: 2rem;
 }
 
-/* 
-* Tech Stack Header
-* Styling for the page title
-*/
 .header h1 {
     font-size: 2.2rem;
     color: var(--primary-color);
@@ -90,18 +76,10 @@ body, html {
     margin-bottom: 2rem;
 }
 
-/* 
-* Card Row Layout
-* Provides spacing between rows of cards
-*/
 .card-row {
     margin-top: 1rem;
 }
 
-/* 
-* Tech Card
-* Styling for individual technology cards
-*/
 .tech-card {
     background-color: white;
     border-radius: 10px;
@@ -114,19 +92,13 @@ body, html {
     animation-fill-mode: both;
 }
 
-/* 
-* Tech Card Hover Effect
-* Adds elevation and movement on hover
-*/
+
 .tech-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-/* 
-* Tech Icon
-* Styling for the technology icons
-*/
+
 .tech-icon {
     width: 100%;
     height: 150px;
@@ -135,20 +107,12 @@ body, html {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
-/* 
-* Tech Card Container
-* Styling for the text area of tech cards
-*/
 .tech-card .container {
     padding: 1rem;
     text-align: center;
     background-color: var(--primary-color);
 }
 
-/* 
-* Tech Card Title
-* Styling for the technology name
-*/
 .tech-card .container h4 {
     margin: 0;
     color: white;
@@ -157,10 +121,6 @@ body, html {
     font-size: 1.2rem;
 }
 
-/* 
-* Staggered Animation for Cards
-* Creates a cascading effect as cards appear
-*/
 .col-md-4:nth-child(1) .tech-card { animation-delay: 0.1s; }
 .col-md-4:nth-child(2) .tech-card { animation-delay: 0.2s; }
 .col-md-4:nth-child(3) .tech-card { animation-delay: 0.3s; }
@@ -170,10 +130,6 @@ body, html {
 .col-md-4:nth-child(7) .tech-card { animation-delay: 0.7s; }
 .col-md-4:nth-child(8) .tech-card { animation-delay: 0.8s; }
 
-/* 
-* Responsive Adjustments - Large Devices
-* Adjustments for screens up to 992px (large tablets/small desktops)
-*/
 @media (max-width: 992px) {
     .tech-stack-container {
         padding: 1.5rem;
@@ -182,17 +138,12 @@ body, html {
     .header h1 {
         font-size: 2rem;
     }
-    
-    /* Adjust to 2 columns on tablet */
+ 
     .col-md-4 {
         width: 50%;
     }
 }
 
-/* 
-* Responsive Adjustments - Medium Devices
-* Adjustments for screens up to 768px (tablets/large phones)
-*/
 @media (max-width: 768px) {
     .tech-stack-container {
         padding: 1.5rem;
@@ -205,17 +156,12 @@ body, html {
     .tech-icon {
         height: 120px;
     }
-    
-    /* Maintain 2 columns on smaller tablets/mobile */
+  
     .col-sm-6 {
         width: 50%;
     }
 }
 
-/* 
-* Responsive Adjustments - Small Devices
-* Adjustments for screens up to 576px (mobile phones)
-*/
 @media (max-width: 576px) {
     .tech-stack-container {
         padding: 1rem;
@@ -225,8 +171,7 @@ body, html {
         font-size: 1.5rem;
         margin-bottom: 1.5rem;
     }
-    
-    /* Maintain 2 columns even on small mobile */
+
     .col-sm-6 {
         width: 50%;
         padding-left: 0.5rem;

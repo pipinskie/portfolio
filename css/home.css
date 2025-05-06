@@ -1,4 +1,3 @@
-/* Global Styles */
 :root {
     --primary-color: #7689de;
     --secondary-color: #a9dce3;
@@ -9,10 +8,7 @@
     --transition: all 0.3s ease;
 }
 
-/* 
-* Main body styling
-* Sets the font, colors and prevents horizontal overflow
-*/
+
 body {
     font-family: 'Baskervville', serif;
     line-height: 1.6;
@@ -21,10 +17,6 @@ body {
     overflow-x: hidden;
 }
 
-/* 
-* Bootstrap Navbar Overrides
-* Customizes the Bootstrap navbar to match our color scheme
-*/
 .navbar {
     background-color: var(--primary-color);
     padding: 1rem 2rem;
@@ -61,10 +53,6 @@ body {
     color: var(--primary-color);
 }
 
-/* 
-* Main Content Container
-* Provides proper spacing from the fixed navbar
-*/
 .main-container {
     padding-top: 6rem;
     padding-bottom: 3rem;
@@ -72,10 +60,6 @@ body {
     margin: 0 auto;
 }
 
-/* 
-* Content Wrapper
-* Styles the main content area with border and shadow
-*/
 .content-wrapper {
     background-color: rgba(255, 255, 255, 0.1);
     border: 3px solid var(--border-color);
@@ -90,20 +74,12 @@ body {
     max-width: 1000px;
 }
 
-/* 
-* Text Content
-* Styles for the main text area
-*/
 .text-content {
     padding: 1rem;
     text-align: center;
     margin: 0 auto;
 }
 
-/* 
-* Image Container
-* Styles the container holding the profile image
-*/
 .image-container {
     padding: 1rem;
     text-align: center;
@@ -113,10 +89,6 @@ body {
     align-items: center;
 }
 
-/* 
-* Profile Image
-* Styles the profile image itself with circular shape and hover zoom
-*/
 .profile-image {
     max-width: 300px;
     height: 300px;
@@ -134,10 +106,6 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* 
-* Typography
-* Styles for headings and text
-*/
 h1 {
     font-size: 2.5rem;
     color: var(--primary-color);
@@ -156,10 +124,6 @@ h3 {
     text-align: center;
 }
 
-/* 
-* Text Highlighting
-* Styles for highlighted text elements
-*/
 .highlight {
     color: #087416;
     font-weight: bold;
@@ -170,12 +134,7 @@ h3 {
     font-style: italic;
 }
 
-/* 
-* About Page Styles
-* Styles specific to the about page
-*/
 .about-content {
-    max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
     background-color: rgba(255, 255, 255, 0.1);
@@ -191,10 +150,6 @@ h3 {
     font-size: 1.1rem;
 }
 
-/* 
-* Animations
-* Fade-in animation for content elements
-*/
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -210,10 +165,6 @@ h3 {
     animation: fadeIn 0.5s ease-out;
 }
 
-/* 
-* Responsive Design - Large Devices
-* Adjustments for screens up to 992px (large tablets/small desktops)
-*/
 @media (max-width: 992px) {
     .content-wrapper {
         padding: 1.5rem;
@@ -226,8 +177,7 @@ h3 {
     h3 {
         font-size: 1.1rem;
     }
-    
-    /* Reorder columns on tablet - image first, then text */
+
     .row.content-wrapper {
         flex-direction: column-reverse;
         text-align: center;
@@ -243,10 +193,7 @@ h3 {
     }
 }
 
-/* 
-* Responsive Design - Medium Devices
-* Adjustments for screens up to 768px (tablets/large phones)
-*/
+
 @media (max-width: 768px) {
     .navbar {
         padding: 0.75rem 1rem;
@@ -261,8 +208,7 @@ h3 {
         text-align: center;
         padding: 1.5rem;
     }
-    
-    /* Reorder columns on mobile - image first, then text */
+
     .row.content-wrapper {
         flex-direction: column-reverse;
     }
@@ -283,10 +229,6 @@ h3 {
     }
 }
 
-/* 
-* Responsive Design - Small Devices
-* Adjustments for screens up to 576px (mobile phones)
-*/
 @media (max-width: 576px) {
     .main-container {
         padding-top: 4.5rem;
