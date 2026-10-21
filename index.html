@@ -1,54 +1,543 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prince Jin Stephen Moya | Home</title>
-    <link rel="icon" type="image/x-icon" href="img\chick.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css\home.css">
-    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Prince Jin Stephen Moya (Prince M.), a BSIT student and aspiring developer.">
+  <meta name="theme-color" content="#172B24">
+  <title>Prince M. | BSIT Student &amp; Aspiring Developer</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Suprimocy</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="tech-stack.html">Tech Stack</a>
-                        <li class="nav-item">
-                        <a class="nav-link active" href="project.html">Project</a>
-                    </li>
-                    </li>
-                </ul>
-            </div>
-        </div>
+  <!-- NAVIGATION -->
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="#home" aria-label="Prince M. home">PRINCE M<span>.</span></a>
+
+      <button class="menu-toggle" id="menuToggle" type="button"
+        aria-label="Open navigation menu" aria-expanded="false"
+        aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#tech-stack">Tech Stack</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#certifications">Certifications</a>
+        <a class="nav-link" href="#achievements">Achievements</a>
+        <a class="nav-cta" href="#contact">Contact</a>
+      </div>
     </nav>
-    <div class="container main-container">
-        <div class="row justify-content-center content-wrapper mt-3 animate__animated animate__fadeInDown">
-            <div class="col-lg-7">
-                <h1>Prince Jin Stephen Moya</h1>
-                <h3><span class="highlight">Prince</span>("<span class="string">Hello, World</span>"); </h3>
-                <h3>I'm Prince Jin Stephen Moya, aspiring web developer. I found my comfort in videogames and would like to create a world where people like me would escape in their reality to virtual world.</h3>
-            </div>
-            <div class="col-lg-5 image-container">
-                <img src="img\profile.png" alt="Profile Picture" class="profile-image img-fluid">
-            </div>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section class="hero section" id="home">
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">
+            <span class="status-dot"></span>
+            BSIT STUDENT · ASPIRING WEB DEVELOPER
+          </p>
+
+          <h1>
+            Learning, building, and improving
+            <span>one project at a time.</span>
+          </h1>
+
+          <p class="hero-description">
+            Hi, I'm <strong>Prince Jin Stephen Moya</strong>.
+            I'm a Bachelor of Science in Information Technology student
+            developing my skills through academic projects, hands-on
+            practice, and teamwork.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my work</a>
+            <a class="button button-secondary" href="#contact">Get in touch</a>
+            <span class="button button-disabled" aria-disabled="true"
+              title="Resume PDF will be added when ready">
+              Resume PDF · Coming soon
+            </span>
+          </div>
+
+          <div class="hero-meta">
+            <span><span class="status-dot"></span> Student portfolio</span>
+            <span>Based in the Philippines</span>
+          </div>
         </div>
+
+        <div class="hero-card reveal">
+          <div class="hero-card-glow"></div>
+
+          <div class="avatar-placeholder avatar-photo">
+            <img src="img/prince.jpg" alt="Prince Moya">
+          </div>
+
+          <p class="hero-card-label">PRINCE M. · PORTFOLIO</p>
+          <h2>Curious by nature.<br>Careful with the details.</h2>
+          <p>I value steady progress, clear communication, and learning from every project.</p>
+
+          <div class="hero-card-tags">
+            <span>Problem solving</span>
+            <span>Quality assurance</span>
+            <span>Teamwork</span>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#about">Scroll to explore <span>↓</span></a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">GET TO KNOW ME</p>
+        <h2>A student focused on <span>continuous growth.</span></h2>
+        <p>
+          I am a fourth-year Bachelor of Science in Information Technology
+          student. I am continuing to develop my technical skills through
+          academic projects, hands-on practice, and collaboration with others.
+        </p>
+      </div>
+
+      <div class="content-grid">
+        <article class="info-card reveal">
+          <div class="card-icon">01</div>
+          <h3>What I value</h3>
+          <p>Being responsible, staying open to feedback, and doing my part to help a team complete its goals.</p>
+        </article>
+
+        <article class="info-card reveal">
+          <div class="card-icon">02</div>
+          <h3>What I'm developing</h3>
+          <p>My skills in software development, system testing, databases, and understanding how hardware and software work together.</p>
+        </article>
+
+        <article class="info-card reveal">
+          <div class="card-icon">03</div>
+          <h3>My goal</h3>
+          <p>To gain practical experience, keep improving, and contribute to useful technology solutions.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section class="section section-muted" id="tech-stack">
+      <div class="section-heading reveal">
+        <p class="eyebrow">TOOLS &amp; TECHNOLOGIES</p>
+        <h2>Tools I've <span>worked with.</span></h2>
+        <p>
+          A selection of programming languages, development tools,
+          and database technologies I have encountered through learning
+          and academic project work.
+        </p>
+      </div>
+
+      <div class="tech-categories">
+        <!-- LANGUAGES -->
+        <article class="tech-category reveal">
+          <div class="tech-category-heading">
+            <span class="tech-category-number">01</span>
+            <div>
+              <h3>Languages</h3>
+              <p>Programming and web languages</p>
+            </div>
+          </div>
+
+          <div class="tech-grid">
+            <div class="tech-card">
+              <img src="img/html.png" alt="HTML" loading="lazy">
+              <span>HTML</span>
+            </div>
+            <div class="tech-card">
+              <img src="img/css.svg" alt="CSS" loading="lazy">
+              <span>CSS</span>
+            </div>
+            <div class="tech-card">
+              <img src="img/js.svg" alt="JavaScript" loading="lazy">
+              <span>JavaScript</span>
+            </div>
+            <div class="tech-card">
+              <img src="img/java.png" alt="Java" loading="lazy">
+              <span>Java</span>
+            </div>
+            <div class="tech-card">
+              <img src="img/dart.png" alt="Dart" loading="lazy">
+              <span>Dart</span>
+            </div>
+            <div class="tech-card">
+              <img src="img/c.png" alt="C" loading="lazy">
+              <span>C</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- DEVELOPMENT TOOLS -->
+        <article class="tech-category reveal">
+          <div class="tech-category-heading">
+            <span class="tech-category-number">02</span>
+            <div>
+              <h3>Development Tools</h3>
+              <p>Development, frameworks, testing and deployment</p>
+            </div>
+          </div>
+
+          <div class="tech-grid">
+            <div class="tech-card">
+              <img src="img/node.png" alt="Node.js" loading="lazy">
+              <span>Node.js</span>
+            </div>
+            <div class="tech-card">
+              <img src="img/express.png" alt="Express.js" loading="lazy">
+              <span>Express.js</span>
+            </div>
+            <div class="tech-card">
+              <img src="img/vsc.png" alt="Visual Studio Code" loading="lazy">
+              <span>VS Code</span>
+            </div>
+            <div class="tech-card">
+              <img src="img/flutter.png" alt="Flutter" loading="lazy">
+              <span>Flutter</span>
+            </div>
+            <div class="tech-card">
+              <img src="img/postman.png" alt="Postman" loading="lazy">
+              <span>Postman</span>
+            </div>
+            <div class="tech-card">
+              <img src="img/render.png" alt="Render" loading="lazy">
+              <span>Render</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- DATABASE -->
+        <article class="tech-category reveal">
+          <div class="tech-category-heading">
+            <span class="tech-category-number">03</span>
+            <div>
+              <h3>Database</h3>
+              <p>Data storage and backend services</p>
+            </div>
+          </div>
+
+          <div class="tech-grid">
+            <div class="tech-card">
+              <img src="img/mongodb.png" alt="MongoDB" loading="lazy">
+              <span>MongoDB</span>
+            </div>
+            <div class="tech-card">
+              <img src="img/firebase.png" alt="Firebase" loading="lazy">
+              <span>Firebase</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">SELECTED WORK</p>
+        <h2>Projects built through <span>practice and teamwork.</span></h2>
+        <p>
+          These projects reflect what I have learned so far. I aim to explain
+          the purpose of each project and my contribution clearly.
+        </p>
+      </div>
+
+      <div class="project-grid">
+        <!-- GRAIN DRYING CAPSTONE -->
+        <article class="project-card project-featured reveal">
+          <div class="project-art art-capstone">
+            <div class="art-lines"></div>
+            <div class="art-chip">grAIn</div>
+            <div class="art-label">Grain Drying System</div>
+          </div>
+
+          <div class="project-content">
+            <div class="project-topline">
+              <span class="category-label">Capstone Project</span>
+              <span class="status-pill status-progress">In progress</span>
+            </div>
+
+            <h3>IoT-Based Grain Drying System</h3>
+
+            <p>
+              An academic capstone project that combines a physical grain-drying
+              prototype with a software application. The system involves
+              humidity sensing, fan control, and application functions for
+              account access and database integration.
+            </p>
+
+            <h4>Project objectives</h4>
+            <ul class="compact-list">
+              <li>Develop a system that supports the grain-drying process.</li>
+              <li>Connect sensor readings and hardware components with the application.</li>
+              <li>Explore predictive approaches for estimating grain moisture behavior.</li>
+            </ul>
+
+            <h4>Technologies and components</h4>
+            <div class="tag-list">
+              <span>IoT Hardware</span>
+              <span>Humidity Sensing</span>
+              <span>Fan Control</span>
+              <span>Database Integration</span>
+              <span>Login System</span>
+              <span>Random Forest</span>
+              <span>Gradient Boosting</span>
+              <span>Modified Chung–Pfost EMC</span>
+            </div>
+
+            <h4>My role: Quality Assurance and Application Testing</h4>
+            <p>
+              I help inspect project materials, components, and the physical
+              structure of the prototype. My responsibilities also include
+              testing application functions, checking whether they behave as
+              expected, identifying issues, reviewing system outputs, and
+              reporting findings to the team for improvement. I also contribute
+              to shared project responsibilities.
+            </p>
+
+            <div class="evidence-callout">
+              <div>
+                <h4>Current development status</h4>
+                <p>
+                  The physical prototype and wiring have been developed.
+                  Application and integration work is ongoing, including account
+                  creation, database functions, fan-speed control, and sensor
+                  integration.
+                </p>
+              </div>
+            </div>
+
+            <h4>Application screenshots</h4>
+            <p>
+              Add real screenshots of the application here when they are ready.
+              Do not publish placeholder images as actual project evidence.
+            </p>
+
+            <!-- Add actual screenshots when available.
+            <img src="img/grain-drying-dashboard.png"
+                 alt="Grain drying system application dashboard">
+            -->
+
+            <details class="project-details">
+              <summary>Additional project details</summary>
+
+              <h4>Quality assurance and testing</h4>
+              <ul>
+                <li>Test application functions and check whether they behave as expected.</li>
+                <li>Identify issues and report findings to the project team.</li>
+                <li>Review application outputs and help assess system integration.</li>
+                <li>Contribute to other shared tasks as required by the team.</li>
+              </ul>
+
+              <h4>Development work in progress</h4>
+              <ul>
+                <li>Account creation and login functions.</li>
+                <li>Database integration.</li>
+                <li>Fan-speed control and humidity sensor integration.</li>
+              </ul>
+
+              <p>
+                Before final submission, add the approved full project title,
+                confirmed objectives, actual screenshots, and verified test
+                results that you are permitted to share.
+              </p>
+            </details>
+          </div>
+        </article>
+
+        <!-- STUDENT SCHEDULE TRACKER -->
+        <article class="project-card project-featured reveal">
+          <div class="project-art art-schedule">
+            <div class="art-lines"></div>
+            <div class="art-chip">STUDENT<br>SCHEDULE</div>
+            <div class="art-label">Schedule Tracker System</div>
+          </div>
+
+          <div class="project-content">
+            <div class="project-topline">
+              <span class="category-label">Academic Project</span>
+              <span class="status-pill status-complete">Completed</span>
+            </div>
+
+            <h3>Student Schedule Tracker System</h3>
+
+            <p>
+              A mobile application designed to help students organize their
+              class schedules and view their timetables in daily and weekly
+              formats.
+            </p>
+
+            <h4>Key features</h4>
+            <ul class="compact-list">
+              <li>Add and edit class schedules.</li>
+              <li>View daily timetables.</li>
+              <li>View weekly timetables.</li>
+            </ul>
+
+            <h4>Technologies used</h4>
+            <div class="tag-list">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <h4>My contribution: UI design and wireframes/mockups</h4>
+            <p>
+              I designed the application's user interface and created
+              wireframes/mockups to plan screen layouts and the overall
+              visual presentation.
+            </p>
+
+            <div class="evidence-callout">
+              <div>
+                <h4>Project evidence</h4>
+                <p>
+                  Screenshots and demo materials are not currently available.
+                  They can be added here when actual project evidence is ready.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    
+
+<!-- CERTIFICATES -->
+<section class="section section-muted certificates-section" id="certifications">
+  <div class="certificates-container">
+    <div class="certificates-heading">
+      <p class="eyebrow">CERTIFICATES</p>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="certificate-grid">
+
+      <article class="certificate-card">
+        <div class="certificate-image">
+          <img src="img/introduction-to-iot.png"
+               alt="Introduction to IoT certificate">
+        </div>
+        <div class="certificate-info">
+          <h3>Introduction to IoT</h3>
+          <p>Cisco Networking Academy</p>
+        </div>
+      </article>
+
+      <article class="certificate-card">
+        <div class="certificate-image">
+          <img src="img/html-css.png"
+               alt="IT Specialist HTML and CSS certificate">
+        </div>
+        <div class="certificate-info">
+          <h3>IT Specialist — HTML &amp; CSS</h3>
+          <p>Certiport</p>
+        </div>
+      </article>
+
+      <article class="certificate-card">
+        <div class="certificate-image">
+          <img src="img/databases.png"
+               alt="IT Specialist Databases certificate">
+        </div>
+        <div class="certificate-info">
+          <h3>IT Specialist — Databases</h3>
+          <p>Certiport</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+       
+
+    <!-- ACHIEVEMENTS -->
+    <section class="section" id="achievements">
+      <div class="section-heading reveal">
+        <p class="eyebrow">MILESTONES</p>
+        <h2>Achievements &amp; <span>recognition.</span></h2>
+        <p>
+          This section will showcase awards, academic recognition, competitions,
+          and other accomplishments you confirm.
+        </p>
+      </div>
+
+      <div class="content-grid">
+        <article class="info-card reveal">
+          <div class="card-icon">01</div>
+          <h3>Academic Recognition</h3>
+          <p>Add verified academic awards, scholarships, or recognition when available.</p>
+        </article>
+
+        <article class="info-card reveal">
+          <div class="card-icon">02</div>
+          <h3>Competitions and Events</h3>
+          <p>Add actual competitions, conferences, or events you participated in.</p>
+        </article>
+
+        <article class="info-card reveal">
+          <div class="card-icon">03</div>
+          <h3>Other Achievements</h3>
+          <p>Add relevant milestones that demonstrate your effort, growth, or contribution.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="contact-panel reveal">
+        <div>
+          <p class="eyebrow">LET'S CONNECT</p>
+          <h2>Thanks for taking a look at <span>my portfolio.</span></h2>
+          <p>
+            I'm open to learning opportunities, collaboration, and connecting
+            with people who share an interest in technology.
+          </p>
+        </div>
+
+        <div class="contact-links">
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=princejinstephenmoya@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Email <span>↗</span>
+          </a>
+
+          <a href="https://github.com/pipinskie" target="_blank" rel="noopener noreferrer">
+            GitHub <span>↗</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/prince-moya/" target="_blank" rel="noopener noreferrer">
+            LinkedIn <span>↗</span>
+          </a>
+        </div>
+
+        <p class="contact-note">
+          Resume PDF and project links will be added when available.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div>
+      <a class="logo" href="#home">PRINCE M<span>.</span></a>
+      <p>Student portfolio · Learning one step at a time.</p>
+    </div>
+
+    <p>© <span id="year"></span> Prince Jin Stephen Moya.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
